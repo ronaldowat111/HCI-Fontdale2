@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events — FontDale</title>
+  <meta name="description" content="Upcoming events at FontDale — a curated calendar of exclusive gatherings, from avant-garde fashion showcases to intimate culinary journeys." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <site-header active="events"></site-header>
+
+  <main>
+    <!-- Intro -->
+    <section class="page-intro">
+      <div class="container">
+        <span class="eyebrow">The Calendar</span>
+        <h1 class="display">Upcoming Events</h1>
+        <p class="lead">Discover a curated schedule of exclusive gatherings, from avant-garde fashion showcases to intimate culinary journeys. Experience the cultural heartbeat of FontDale.</p>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section class="container">
+      <div class="featured reveal">
+        <div class="media featured__media">
+          <img src="assets/images/event-lumen.jpg" alt="Lumen Skywalk Gala" loading="lazy" onerror="this.remove()" />
+        </div>
+        <div class="featured__card">
+          <span class="eyebrow">Featured · Oct 18 – Oct 21</span>
+          <h2>Lumen Skywalk Gala</h2>
+          <p>An immersive evening under our architectural glass canopy. Join us for the unveiling of the season's most anticipated art installation, accompanied by a curated acoustic performance and botanical cocktails. Dress code is strictly minimalist eveningwear.</p>
+          <a class="link-arrow is-dark" href="#">Reserve Access <span class="arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event list -->
+    <section class="container section">
+      <article class="event-row reveal">
+        <div>
+          <span class="eyebrow date">December 05</span>
+          <h3>Autumn Fashion Week</h3>
+          <p>Experience the shifting of the seasons through the lens of international luxury houses. The central atrium transforms into a runway featuring the latest collections, punctuated by exclusive designer meet-and-greets and private fitting sessions.</p>
+          <a class="link-arrow" href="#">View Schedule <span class="arrow">&rarr;</span></a>
+        </div>
+        <div class="media event-row__media">
+          <img src="assets/images/event-fashion.jpg" alt="Autumn Fashion Week" loading="lazy" onerror="this.remove()" />
+        </div>
+      </article>
+
+      <article class="event-row event-row--reverse reveal">
+        <div>
+          <span class="eyebrow date">November 22</span>
+          <h3>Chef's Table Experience</h3>
+          <p>An intimate, 12-seat culinary residency featuring Michelin-starred visiting chefs. This multi-course tasting menu explores the intersection of gastronomy and modern art, served within our private penthouse dining suite.</p>
+          <a class="link-arrow" href="#">Join Waitlist <span class="arrow">&rarr;</span></a>
+        </div>
+        <div class="media event-row__media">
+          <img src="assets/images/event-chef.jpg" alt="Chef's Table Experience" loading="lazy" onerror="this.remove()" />
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Directory — FontDale</title>
+  <meta name="description" content="Browse the curated maisons, ateliers, and culinary destinations of FontDale." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <site-header active="directory"></site-header>
+
+  <main>
+    <!-- NOTE: Directory layout is a best-effort draft — to be aligned once the
+         Directory frame from Figma is provided. -->
+    <section class="page-intro">
+      <div class="container">
+        <span class="eyebrow">The Collection</span>
+        <h1 class="display">Directory</h1>
+        <p class="lead">A curated index of the maisons, ateliers, and culinary destinations housed within FontDale.</p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="filter-bar">
+        <button class="filter-chip is-active">All</button>
+        <button class="filter-chip">Fashion</button>
+        <button class="filter-chip">Dining</button>
+        <button class="filter-chip">Beauty</button>
+        <button class="filter-chip">Lifestyle</button>
+      </div>
+
+      <div class="directory-grid">
+        <a class="dir-card reveal" href="#">
+          <div class="media dir-card__media">
+            <img src="assets/images/dir-artisan-kitchen.jpg" alt="Artisan Kitchen" loading="lazy" onerror="this.remove()" />
+          </div>
+          <span class="eyebrow cat">Dining</span>
+          <h3>Artisan Kitchen</h3>
+          <p>Seasonal and single-origin coffees served in a space designed for quiet reflection and conversation.</p>
+          <span class="link-arrow">Visit <span class="arrow">&rarr;</span></span>
+        </a>
+
+        <a class="dir-card reveal" href="#">
+          <div class="media dir-card__media">
+            <img src="assets/images/dir-maison.jpg" alt="Maison Atelier" loading="lazy" onerror="this.remove()" />
+          </div>
+          <span class="eyebrow cat">Fashion</span>
+          <h3>Maison Atelier</h3>
+          <p>A flagship boutique presenting seasonal couture and bespoke tailoring from leading luxury houses.</p>
+          <span class="link-arrow">Visit <span class="arrow">&rarr;</span></span>
+        </a>
+
+        <a class="dir-card reveal" href="#">
+          <div class="media dir-card__media">
+            <img src="assets/images/dir-aurum.jpg" alt="Aurum Fine Jewellery" loading="lazy" onerror="this.remove()" />
+          </div>
+          <span class="eyebrow cat">Lifestyle</span>
+          <h3>Aurum</h3>
+          <p>Fine jewellery and rare timepieces, presented within an intimate gallery setting.</p>
+          <span class="link-arrow">Visit <span class="arrow">&rarr;</span></span>
+        </a>
+
+        <a class="dir-card reveal" href="#">
+          <div class="media dir-card__media">
+            <img src="assets/images/dir-spa.jpg" alt="Lumière Spa" loading="lazy" onerror="this.remove()" />
+          </div>
+          <span class="eyebrow cat">Beauty</span>
+          <h3>Lumière Spa</h3>
+          <p>A sanctuary of restorative treatments and curated wellness rituals above the city.</p>
+          <span class="link-arrow">Visit <span class="arrow">&rarr;</span></span>
+        </a>
+
+        <a class="dir-card reveal" href="#">
+          <div class="media dir-card__media">
+            <img src="assets/images/dir-cellar.jpg" alt="The Cellar" loading="lazy" onerror="this.remove()" />
+          </div>
+          <span class="eyebrow cat">Dining</span>
+          <h3>The Cellar</h3>
+          <p>A subterranean wine room offering rare vintages and curated tasting flights.</p>
+          <span class="link-arrow">Visit <span class="arrow">&rarr;</span></span>
+        </a>
+
+        <a class="dir-card reveal" href="#">
+          <div class="media dir-card__media">
+            <img src="assets/images/dir-objet.jpg" alt="Objet" loading="lazy" onerror="this.remove()" />
+          </div>
+          <span class="eyebrow cat">Lifestyle</span>
+          <h3>Objet</h3>
+          <p>Collectible design, rare books, and considered homeware for the modern aesthete.</p>
+          <span class="link-arrow">Visit <span class="arrow">&rarr;</span></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

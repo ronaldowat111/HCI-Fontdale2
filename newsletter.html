@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter — FontDale</title>
+  <meta name="description" content="Join the FontDale inner circle. Elevate your inbox with curated updates on new luxury arrivals, exclusive events, and cultural highlights." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <site-header active="newsletter"></site-header>
+
+  <main>
+    <section class="container section">
+      <div class="newsletter">
+        <!-- Intro + image -->
+        <div class="newsletter__intro reveal">
+          <h1 class="display">Stay<br />Connected</h1>
+          <p class="lead">Join the FontDale inner circle. Elevate your inbox with curated updates on new luxury arrivals, exclusive dining experiences, and cultural events tailored to your sophisticated urban lifestyle.</p>
+          <div class="media newsletter__media">
+            <img src="assets/images/newsletter-couple.jpg" alt="Visitors at FontDale" loading="lazy" onerror="this.remove()" />
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="form-card reveal" data-newsletter novalidate>
+          <div class="field">
+            <label for="fullname">Full Name</label>
+            <input id="fullname" name="fullname" type="text" placeholder="Your full name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number (Optional)</label>
+            <input id="phone" name="phone" type="tel" placeholder="+1 (000) 000-0000" />
+          </div>
+          <div class="field">
+            <label for="interest">Primary Interest</label>
+            <select id="interest" name="interest">
+              <option value="" disabled selected>Select a topic</option>
+              <option>Fashion &amp; Luxury</option>
+              <option>Dining &amp; Culinary</option>
+              <option>Art &amp; Culture</option>
+              <option>Events &amp; Experiences</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <p class="field-group-label">Update Frequency</p>
+            <label class="check"><input type="checkbox" name="frequency" value="weekly" checked /> Weekly Edition</label>
+            <label class="check"><input type="checkbox" name="frequency" value="monthly" /> Monthly Digest</label>
+            <label class="check"><input type="checkbox" name="frequency" value="occasional" /> Occasional Highlights</label>
+          </div>
+
+          <button class="btn btn--gold btn--block" type="submit">Subscribe</button>
+          <p class="form-success" role="status">Thank you — you're now part of the FontDale inner circle.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
